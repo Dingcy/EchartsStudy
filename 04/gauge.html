@@ -37,10 +37,11 @@ var option = {
 
 // 使用刚指定的配置项和数据显示图表。
 myChart.setOption(option);
+// console.log(Number((Math.random()*100).toFixed(2)));
 setInterval(function () {
-    option.series[0].data[0].value = (Math.random() * 100).toFixed(2) - 0;
-    myChart.setOption(option, true);
-},2000);
+    option.series[0].data[0].value = (Math.random()*100).toFixed(2)-0;
+    myChart.setOption(option);
+},1000)
 </script>
 </body>
 </html>
